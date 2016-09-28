@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.subsystems.*;
 
-@TeleOp(name="Unnamed4345: TeleOp Single", group="unnamed4345")
+@TeleOp(name="Unnamed4345: TeleOp Dual", group="unnamed4345")
 public class TeleOpSingle extends OpMode {
 
     private Drivetrain drivetrain;
