@@ -7,7 +7,7 @@ public class Drivetrain {
 
     private DcMotor leftDriveMotor, rightDriveMotor;
 
-    public Drivetrain(DcMotor leftDriveMotor, DcMotor rightDriveMotor) {
+    public DriveTrain(DcMotor leftDriveMotor, DcMotor rightDriveMotor) {
         this.leftDriveMotor = leftDriveMotor;
         this.rightDriveMotor = rightDriveMotor;
 
