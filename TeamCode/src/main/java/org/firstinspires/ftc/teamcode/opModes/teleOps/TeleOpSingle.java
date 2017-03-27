@@ -10,6 +10,7 @@ import org.firstinspires.ftc.teamcode.subsystems.Intake;
 @TeleOp(name="legend27: TeleOp Single NO COLOR SENSOR", group="legend27")
 public class TeleOpSingle extends OpMode {
 
+    //declares subsystems
     private Catapult catapult;
     private Drivetrain drivetrain;
     private Intake intake;
@@ -34,8 +35,10 @@ public class TeleOpSingle extends OpMode {
     public void loop() {
         drivetrain.arcadeDrive(-1 * gamepad1.left_stick_y, gamepad1.right_stick_x);
 
+        //gets relevant gamepad state
         intakeControls();
         catapultControls();
+        //prints current state of shooter and drive
         telemetry.addData("Catapult Position", catapult.getPosition());
         telemetry.addData("Drive Position", drivetrain.getPosition()[0] + ", " + drivetrain.getPosition()[1]);
     }
